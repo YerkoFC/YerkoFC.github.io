@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web page with CSS GRID</title>
-
     <!-- STYLES -->
     <link rel="stylesheet" href="/styles/styles.css">
     <!-- FONT AWESOME -->
@@ -16,15 +15,14 @@
 
 </head>
 <body>
-    
     <div class="grid-container">
         <header class="header">
             <nav class="navbar">
                 <a href="index.html" class="logo">logo</a>
                 <ul class="navbar-list">
-                    <li class="navbar-item">Inicio</li>
-                    <li class="navbar-item">Nosotros</li>
-                    <li class="navbar-item">Otros</li>
+                    <li class="navbar-item"><a href="#jobs">Jobs</a></li>
+                    <li class="navbar-item"><a href="#languages">Programming languages</a></li>
+                    <li class="navbar-item"><a href="#frameworks">Frameworks</a></li>
                 </ul>
                 <ul class="social">
                     <li class="facebook social-item"><i class="fab fa-facebook-square fa-lg"></i></li>
@@ -36,10 +34,11 @@
                 <p class="text-intro">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae velit, fugit a nihil laboriosam dolor!
                 </p>                
-                <div class="button-jobs">See my jobs</div>
+                <div class="button-jobs"><a href="#jobs">See my jobs</a></div>
             </div>
         </header>
         <main class="main">
+            <span id="jobs"></span>
             <h2> JOBS </h2>
             <section class="section-jobs">
                 <div class="job">
@@ -71,6 +70,7 @@
                     <div class="job-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur beatae sed ea autem quisquam saepe quidem, incidunt suscipit rerum ducimus.</div>
                 </div>
             </section>
+            <span id="languages"></span>
             <h2> PROGRAMMING LANGUAGES </h2>
             <section class="section-languages">
                 <div class="language" id="html">
@@ -83,6 +83,7 @@
                     <span>Javascript</span>                    
                 </div>
             </section>
+            <span id="frameworks"></span>
             <h2> FRAMEWORKS </h2>
             <section class="section-frameworks">
                 <div class="framework" id="node">
@@ -99,10 +100,11 @@
         </main>
         <footer class="footer">
             
-            <span>Yerko Foncea</span>
+            <span>Lorem ipsum dolor sit amet.</span>
         
         </footer>
     </div>
-        
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/main.js"></script>     
 </body>
 </html>

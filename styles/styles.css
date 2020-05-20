@@ -3,16 +3,22 @@
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-}
-
 li{
     list-style: none;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+.grid-container > .header > .navbar > .navbar-list > .navbar-item > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.grid-container > .header > .navbar > .logo{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /* Areas de pagina web completa*/
@@ -27,6 +33,7 @@ body{
 .footer{
     grid-area: footer;
 }
+
 
 /* Creando la plantilla de la pagina */
 .grid-container{
@@ -80,7 +87,7 @@ body{
 
 .grid-container > .header > .navbar > .navbar-list > .navbar-item:hover{
     border-bottom: 1px solid #ffffff;
-
+    opacity: 0.6;
 }
 
 .grid-container > .header > .navbar > .navbar-list > .navbar-item{
@@ -141,6 +148,11 @@ body{
 .grid-container > .header > .intro > .button-jobs:hover {
     opacity: 1;
     width: 300px;
+ }
+
+ .grid-container > .header > .intro > .button-jobs > a{
+     text-decoration: none;
+     color: #ffffff;
  }
 
  /* MAIN */
@@ -295,10 +307,18 @@ body{
 
 
 
-@media all and (max-width: 400px){
+@media all and (max-width: 600px){
     .grid-container > .main > .section-jobs{
         display: grid;  
         grid-template-columns: 1fr;
+    }
+
+    .grid-container > .main > .section-jobs > .job{
+        height: 150px;
+    }
+
+    .grid-container > .header > .navbar > .navbar-list > .navbar-item{
+        text-align: center;
     }
     
 }
