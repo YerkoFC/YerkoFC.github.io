@@ -99,6 +99,7 @@ body{
 .grid-container > .header > .navbar > .social{
     display: flex;
     flex-flow: row nowrap;
+    flex: 1 1 20%;
 }
 
 .grid-container > .header > .navbar > .social > .social-item{
@@ -305,9 +306,8 @@ body{
     color: #ffffff;
 }
 
-
-
 @media all and (max-width: 600px){
+
     .grid-container > .main > .section-jobs{
         display: grid;  
         grid-template-columns: 1fr;
@@ -317,8 +317,29 @@ body{
         height: 150px;
     }
 
-    .grid-container > .header > .navbar > .navbar-list > .navbar-item{
+    .grid-container > .header > .navbar{
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 20%;
+        align-items: center;
+    }
+
+    .grid-container > .header > .navbar > .logo{
+        flex: 1 1 auto;
+    }
+
+    .grid-container > .header > .navbar > .navbar-list{
+        flex: 1 1 auto;
+        justify-content: space-between;
+        margin-bottom: 5px;
         text-align: center;
     }
-    
+
+    .grid-container > .header > .navbar > .navbar-list > .navbar-item{
+        flex: 1 1 auto;
+    }
+   
+    .grid-container > .header > .intro{
+        flex: 1 1 80%;
+    }
 }
